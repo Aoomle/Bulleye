@@ -11,6 +11,7 @@ struct ContentView: View {
   
 @State private var alertIsVisible = false
 @State private var sliderValue = 10.0
+@State private var game: Game = Game()
   
   var body: some View {
     VStack {
@@ -39,7 +40,8 @@ struct ContentView: View {
       }) {
         Text("Hit Me")
       }.alert(isPresented: $alertIsVisible, content: {
-        return Alert(title: Text("Hello There!"), message: Text("\(sliderValue)"), dismissButton: .default(Text("Awesome!")))
+        let roundedValue = Int(sliderValue.rounded())
+        return Alert(title: Text("Hello There!"), message: Text("The slider value is:\(roundedValue)\n" + "You scored \(self.game.points(sliderValue: roundedValue)) points this round"), dismissButton: .default(Text("Awesome!")))
       })
 
     }
@@ -48,7 +50,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    Group {
+      ContentView()
+        .previewDevice("iPhone 8")
+    }
     ContentView()
       .previewLayout(.fixed(width: 568, height: 320))
   }

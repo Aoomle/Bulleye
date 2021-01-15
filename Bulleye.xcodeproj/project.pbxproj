@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473F092D25B24367003158F7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F092C25B24367003158F7 /* Game.swift */; };
 		479180E525AF678D005E58F5 /* BulleyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479180E425AF678D005E58F5 /* BulleyeApp.swift */; };
 		479180E725AF678D005E58F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479180E625AF678D005E58F5 /* ContentView.swift */; };
 		479180E925AF678F005E58F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479180E825AF678F005E58F5 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473F092C25B24367003158F7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		479180E125AF678D005E58F5 /* Bulleye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bulleye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479180E425AF678D005E58F5 /* BulleyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulleyeApp.swift; sourceTree = "<group>"; };
 		479180E625AF678D005E58F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		473F092425B241DA003158F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				473F092C25B24367003158F7 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		473F092525B241E2003158F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				479180E625AF678D005E58F5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		473F092625B241EF003158F7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				479180E425AF678D005E58F5 /* BulleyeApp.swift */,
+				479180E825AF678F005E58F5 /* Assets.xcassets */,
+				479180ED25AF678F005E58F5 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		479180D825AF678D005E58F5 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +80,9 @@
 		479180E325AF678D005E58F5 /* Bulleye */ = {
 			isa = PBXGroup;
 			children = (
-				479180E425AF678D005E58F5 /* BulleyeApp.swift */,
-				479180E625AF678D005E58F5 /* ContentView.swift */,
-				479180E825AF678F005E58F5 /* Assets.xcassets */,
-				479180ED25AF678F005E58F5 /* Info.plist */,
+				473F092625B241EF003158F7 /* App */,
+				473F092525B241E2003158F7 /* Views */,
+				473F092425B241DA003158F7 /* Model */,
 				479180EA25AF678F005E58F5 /* Preview Content */,
 			);
 			path = Bulleye;
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				479180E725AF678D005E58F5 /* ContentView.swift in Sources */,
+				473F092D25B24367003158F7 /* Game.swift in Sources */,
 				479180E525AF678D005E58F5 /* BulleyeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -252,6 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -271,7 +301,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bulleye/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bulleye/Info.plist;
+				INFOPLIST_FILE = Bulleye/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +323,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bulleye/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bulleye/Info.plist;
+				INFOPLIST_FILE = Bulleye/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
