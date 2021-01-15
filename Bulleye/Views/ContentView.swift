@@ -22,7 +22,7 @@ struct ContentView: View {
         .lineSpacing(4.0)
         .font(.footnote)
       
-      Text("89")
+      Text("\(self.game.target)")
         .kerning(-1.0)
         .font(.largeTitle)
         .fontWeight(.black)
