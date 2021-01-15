@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+  
+  func doSomething() {
+    print(123)
+  }
   var body: some View {
     VStack {
       Text("🎯🎯🎯\nPUT THE BULLEYE AS CLOSE AS YOU CAN TO")
@@ -18,13 +22,21 @@ struct ContentView: View {
         .font(.footnote)
       
       Text("89")
+        .kerning(-1.0)
+        .font(.largeTitle)
+        .fontWeight(.black)
+      
       HStack {
         Text("1")
+          .bold()
         Slider(value: .constant(50), in: 1.0...100.0)
         Text("100")
+          .bold()
       }
       
-      Button(action: {}) {
+      Button(action: {
+        doSomething()
+      }) {
         Text("Hit Me")
       }
 
