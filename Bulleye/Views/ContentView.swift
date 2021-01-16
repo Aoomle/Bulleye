@@ -11,7 +11,7 @@ struct ContentView: View {
   
 @State private var alertIsVisible = false
 @State private var sliderValue = 10.0
-@State private var game: Game = Game()
+@State private var game = Game()
   
   var body: some View {
     VStack {
@@ -22,7 +22,7 @@ struct ContentView: View {
         .lineSpacing(4.0)
         .font(.footnote)
       
-      Text("\(self.game.target)")
+      Text("\(game.target)")
         .kerning(-1.0)
         .font(.largeTitle)
         .fontWeight(.black)
@@ -36,12 +36,12 @@ struct ContentView: View {
       }
       
       Button(action: {
-        self.alertIsVisible = true
+        alertIsVisible = true
       }) {
         Text("Hit Me")
       }.alert(isPresented: $alertIsVisible, content: {
         let roundedValue = Int(sliderValue.rounded())
-        return Alert(title: Text("Hello There!"), message: Text("The slider value is:\(roundedValue)\n" + "You scored \(self.game.points(sliderValue: roundedValue)) points this round"), dismissButton: .default(Text("Awesome!")))
+        return Alert(title: Text("Hello There!"), message: Text("The slider value is:\(roundedValue)\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round"), dismissButton: .default(Text("Awesome!")))
       })
 
     }
