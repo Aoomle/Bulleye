@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-  
+
 @main
 struct BulleyeApp: App {
     var body: some Scene {

@@ -24,17 +24,21 @@ struct ContentView: View {
           .multilineTextAlignment(.center)
           .lineSpacing(4.0)
           .font(.footnote)
+          .foregroundColor(.init("TextColor"))
         
         Text("\(game.target)")
           .kerning(-1.0)
+          .foregroundColor(.init("TextColor"))
           .font(.largeTitle)
           .fontWeight(.black)
         
         HStack {
           Text("1")
+            .foregroundColor(.init("TextColor"))
             .bold()
           Slider(value: $sliderValue, in: 1.0...100.0)
           Text("100")
+            .foregroundColor(.init("TextColor"))
             .bold()
         }
         .padding()
@@ -42,6 +46,7 @@ struct ContentView: View {
           alertIsVisible = true
         }) {
           Text("Hit Me".uppercased())
+            .foregroundColor(.init("TextColor"))
             .bold()
             .font(.title3)
         }
