@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		473F092D25B24367003158F7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473F092C25B24367003158F7 /* Game.swift */; };
+		478E03E025B8FECD001442E5 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E03DF25B8FECD001442E5 /* TextViews.swift */; };
+		478E03EA25B90C1D001442E5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E03E925B90C1D001442E5 /* ButtonView.swift */; };
 		479180E525AF678D005E58F5 /* BulleyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479180E425AF678D005E58F5 /* BulleyeApp.swift */; };
 		479180E725AF678D005E58F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479180E625AF678D005E58F5 /* ContentView.swift */; };
 		479180E925AF678F005E58F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479180E825AF678F005E58F5 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		473F092C25B24367003158F7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		478E03DF25B8FECD001442E5 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		478E03E925B90C1D001442E5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		479180E125AF678D005E58F5 /* Bulleye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bulleye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479180E425AF678D005E58F5 /* BulleyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulleyeApp.swift; sourceTree = "<group>"; };
 		479180E625AF678D005E58F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				479180E625AF678D005E58F5 /* ContentView.swift */,
+				478E03E925B90C1D001442E5 /* ButtonView.swift */,
+				478E03DF25B8FECD001442E5 /* TextViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				479180E725AF678D005E58F5 /* ContentView.swift in Sources */,
+				478E03E025B8FECD001442E5 /* TextViews.swift in Sources */,
+				478E03EA25B90C1D001442E5 /* ButtonView.swift in Sources */,
 				473F092D25B24367003158F7 /* Game.swift in Sources */,
 				479180E525AF678D005E58F5 /* BulleyeApp.swift in Sources */,
 			);
