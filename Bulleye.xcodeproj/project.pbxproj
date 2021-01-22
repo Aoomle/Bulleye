@@ -15,6 +15,7 @@
 		479180E925AF678F005E58F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479180E825AF678F005E58F5 /* Assets.xcassets */; };
 		479180EC25AF678F005E58F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479180EB25AF678F005E58F5 /* Preview Assets.xcassets */; };
 		47EC13A725B2549900C56D77 /* BulleyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC13A625B2549900C56D77 /* BulleyeTests.swift */; };
+		47F4CAB525BB5A1C00EC5CB0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F4CAB425BB5A1C00EC5CB0 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		47EC13A425B2549900C56D77 /* BulleyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BulleyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EC13A625B2549900C56D77 /* BulleyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulleyeTests.swift; sourceTree = "<group>"; };
 		47EC13A825B2549900C56D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47F4CAB425BB5A1C00EC5CB0 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				479180E625AF678D005E58F5 /* ContentView.swift */,
 				478E03E925B90C1D001442E5 /* ButtonView.swift */,
 				478E03DF25B8FECD001442E5 /* TextViews.swift */,
+				47F4CAB425BB5A1C00EC5CB0 /* Shape.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				479180E725AF678D005E58F5 /* ContentView.swift in Sources */,
+				47F4CAB525BB5A1C00EC5CB0 /* Shape.swift in Sources */,
 				478E03E025B8FECD001442E5 /* TextViews.swift in Sources */,
 				478E03EA25B90C1D001442E5 /* ButtonView.swift in Sources */,
 				473F092D25B24367003158F7 /* Game.swift in Sources */,

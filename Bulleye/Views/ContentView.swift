@@ -27,6 +27,20 @@ struct ContentView: View {
 }
 
 
+struct InstructionView: View {
+  @Binding var game: Game
+  
+  var body: some View {
+    VStack {
+      InstructionText(text: "🎯🎯🎯\nPut the bulleye as close as you can to")
+        .padding(.leading, 30.0)
+        .padding(.trailing, 30.0)
+      BigNumberText(text: "\(game.target)")
+    }
+  }
+}
+
+
 struct SliderView: View {
   @Binding var sliderValue: Double
   
@@ -75,18 +89,6 @@ struct HitMeButton: View {
 }
 
 
-struct InstructionView: View {
-  @Binding var game: Game
-  
-  var body: some View {
-    VStack {
-      InstructionText(text: "🎯🎯🎯\nPut the bulleye as close as you can to")
-        .padding(.leading, 30.0)
-        .padding(.trailing, 30.0)
-      BigNumberText(text: "\(game.target)")
-    }
-  }
-}
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
