@@ -7,31 +7,40 @@
 
 import SwiftUI
 
-struct RoundedImageViewStroke: View {
+struct RoundedImageViewStroked: View {
   let systemName: String
   var body: some View {
     Image(systemName: systemName)
       .font(.title)
       .foregroundColor(Color("TextColor"))
       .frame(width: 56.0, height: 56.0)
+      .overlay(
+        Circle()
+          .stroke(Color("TextColor"))
+      )
   }
 }
 
-struct RoundedImageViewFill: View {
+struct RoundedImageViewFilled: View {
   let systemName: String
+  
   var body: some View {
     Image(systemName: systemName)
       .font(.title)
       .foregroundColor(Color("TextColor"))
       .frame(width: 56.0, height: 56.0)
+      .overlay(
+        Circle()
+          .stroke(Color("TextColor"))
+      )
   }
 }
 
 struct Preview: View {
   var body: some View {
     VStack(spacing: 10) {
-      RoundedImageViewStroke(systemName: "arrow.counterclockwise")
-      RoundedImageViewFill(systemName: "list.dash")
+      RoundedImageViewStroked(systemName: "arrow.counterclockwise")
+      RoundedImageViewFilled(systemName: "list.dash")
     }
   }
 }
