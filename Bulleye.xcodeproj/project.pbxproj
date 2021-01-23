@@ -16,6 +16,7 @@
 		47EC13A725B2549900C56D77 /* BulleyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC13A625B2549900C56D77 /* BulleyeTests.swift */; };
 		47F4CAB525BB5A1C00EC5CB0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F4CAB425BB5A1C00EC5CB0 /* Shape.swift */; };
 		47F4CABB25BB5D9600EC5CB0 /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F4CABA25BB5D9600EC5CB0 /* RoundViews.swift */; };
+		47F4CABF25BB92DE00EC5CB0 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F4CABE25BB92DE00EC5CB0 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		47EC13A825B2549900C56D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47F4CAB425BB5A1C00EC5CB0 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		47F4CABA25BB5D9600EC5CB0 /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
+		47F4CABE25BB92DE00EC5CB0 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				47F4CABA25BB5D9600EC5CB0 /* RoundViews.swift */,
 				478E03DF25B8FECD001442E5 /* TextViews.swift */,
 				47F4CAB425BB5A1C00EC5CB0 /* Shape.swift */,
+				47F4CABE25BB92DE00EC5CB0 /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				479180E725AF678D005E58F5 /* ContentView.swift in Sources */,
 				47F4CAB525BB5A1C00EC5CB0 /* Shape.swift in Sources */,
 				478E03E025B8FECD001442E5 /* TextViews.swift in Sources */,
+				47F4CABF25BB92DE00EC5CB0 /* BackgroundView.swift in Sources */,
 				473F092D25B24367003158F7 /* Game.swift in Sources */,
 				479180E525AF678D005E58F5 /* BulleyeApp.swift in Sources */,
 				47F4CABB25BB5D9600EC5CB0 /* RoundViews.swift in Sources */,
