@@ -8,7 +8,7 @@
 import Foundation
 
 struct Game {
-  let target = Int.random(in: 1...100)
+  var target = Int.random(in: 1...100)
   var score = 0
   var round = 1
   
@@ -19,6 +19,7 @@ struct Game {
   mutating func startNewRound(points: Int)  {
     score += points
     round = round + 1
+    target = Int.random(in: 1...100)
   }
   
 }
