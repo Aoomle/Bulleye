@@ -40,6 +40,7 @@ struct SliderLabelText: View {
     Text(text)
       .foregroundColor(.init("TextColor"))
       .bold()
+      .frame(width: 35.0)
   }
 }
 
@@ -52,7 +53,6 @@ struct LabelText: View {
       .kerning(1.5)
       .font(.caption)
       .foregroundColor(.init("TextColor"))
-      .padding(.bottom, 5.0)
   }
 }
 
