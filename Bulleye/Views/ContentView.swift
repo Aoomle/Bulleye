@@ -87,7 +87,7 @@ struct HitMeButton: View {
         let roundedValue = Int(sliderValue.rounded())
         let points = game.points(sliderValue: roundedValue)
         
-        return Alert(title: Text("Hello There!"), message: Text("The slider value is:\(roundedValue)\n" + "You scored \(points) points this round"), dismissButton: .default(Text("Awesome!")){
+        return Alert(title: Text(""), message: Text("The slider value is:\(roundedValue)\n" + "You scored \(points) points this round"), dismissButton: .default(Text("Awesome!")){
           game.startNewRound(points: points)
         })
       })

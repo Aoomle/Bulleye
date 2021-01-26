@@ -59,7 +59,6 @@ struct BottomView: View {
   var body: some View {
     HStack {
       NumberView(title: "Score", text: "\(game.score)")
-      
       Spacer()
       NumberView(title: "Round", text: "\(game.round)")
     }
@@ -82,7 +81,6 @@ struct RingView: View {
           )
           .frame(width: size, height: size)
      
-        
       }
     }
   }
